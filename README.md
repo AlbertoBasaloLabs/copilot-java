@@ -23,5 +23,5 @@ A CLI educational tool that queries public APIs to provide basic information abo
 ---
 
 - Author: [Alberto Basalo](https://albertobasalo.dev)
-- [GitHub Org]: https://github.com/AiCodeAcademy
-- [Repository]: https://github.com/AiCodeAcademy/lab_vs-code-copilot_java-ask-bot
+- [GitHub Org](https://github.com/AiCodeAcademy)
+- [Repository](https://github.com/AiCodeAcademy/lab_vs-code-copilot_java-ask-bot)
