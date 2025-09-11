@@ -1,9 +1,8 @@
 ---
-ID: PRD-ASKBOT-v1
-Versión: 0.1
+ID: ASK-BOT_PRD
+Curso: VSCode-Copilot-Java
+Arquetipo: Java-CLI
 Autor: Alberto Basalo
-Fecha: 2025-09-09
-Estado: draft
 ---
 
 # PRD — AskBot CLI

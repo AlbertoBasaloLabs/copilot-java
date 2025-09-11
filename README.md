@@ -5,8 +5,8 @@ Demo laboratory for VSCode Copilot course Java edition
 
 ```bash
 # Clone repository
-git clone https://github.com/AiCodeAcademy/lab_vs-code-copilot_java-ask-bot.git
-cd lab_vs-code-copilot_java-ask-bot
+git clone https://github.com/AlbertoBasaloLabs/vscode-copilot-java_ask-bot.git
+cd vscode-copilot-java_ask-bot
 # Open in VSCode
 code .
 # Open terminal 
@@ -23,5 +23,4 @@ A CLI educational tool that queries public APIs to provide basic information abo
 ---
 
 - Author: [Alberto Basalo](https://albertobasalo.dev)
-- [GitHub Org](https://github.com/AiCodeAcademy)
-- [Repository](https://github.com/AiCodeAcademy/lab_vs-code-copilot_java-ask-bot)
+- Source: [Labs Repository](https://github.com/AlbertoBasaloLabs/vscode-copilot-java_ask-bot)
