@@ -23,11 +23,11 @@ public class IpClient {
 
       if (status >= 200 && status < 300) {
         IpApiResponse ipApi = IpApiResponse.fromJson(body);
-        System.out.println("Your IP address is " + ipApi.ip());
+        System.out.println("## Your IP address is " + ipApi.ip());
         String location = ipApi.city() + ", " + ipApi.region() + ", " + ipApi.country_name();
-        System.out.println("Location: " + location);
-        String coordinates = "Lat " + ipApi.latitude() + ", Long " + ipApi.longitude();
-        System.out.println("Coordinates: " + coordinates);
+        System.out.println("- Location: " + location);
+        String coordinates = "- Coordinates: Lat " + ipApi.latitude() + ", Long " + ipApi.longitude();
+        System.out.println(coordinates);
       } else {
         System.out.println("Error HTTP " + status);
       }
