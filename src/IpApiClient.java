@@ -4,7 +4,7 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-public class Ip {
+public class IpApiClient {
 
   public static void fetchIp() {
     HttpClient client = HttpClient.newHttpClient();
@@ -20,7 +20,7 @@ public class Ip {
       String body = response.body();
 
       if (status >= 200 && status < 300) {
-        IpApiResponse ipApi = IpApiResponse.fromJson(body);
+        IpApi ipApi = IpApi.fromJson(body);
         System.out.println("Your IP address is " + ipApi.ip());
         String location = ipApi.city() + ", " + ipApi.region() + ", " + ipApi.country_name();
         System.out.println("Location: " + location);
