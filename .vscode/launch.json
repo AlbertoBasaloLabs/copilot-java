@@ -6,8 +6,15 @@
   "configurations": [
     {
       "type": "java",
-      "name": "Launch Java Program",
+      "name": "No Args",
       "request": "launch",
+      "mainClass": ""
+    },
+    {
+      "type": "java",
+      "name": "Weather",
+      "request": "launch",
+      "args": "weather",
       "mainClass": ""
     },
     {
