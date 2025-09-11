@@ -4,7 +4,7 @@ import java.util.Map;
  * Record inmutable que representa la respuesta de la API (sin dependencias).
  * Contiene fromJson que usa un parser JSON mínimo implementado aquí.
  */
-public record IpApi(
+public record IpApiResponse(
     String ip,
     String network,
     String version,
@@ -33,9 +33,9 @@ public record IpApi(
     String asn,
     String org) {
 
-  public static IpApi fromJson(String json) {
+  public static IpApiResponse fromJson(String json) {
     Map<String, Object> m = new JsonParser(json).parseObject();
-    return new IpApi(
+    return new IpApiResponse(
         (String) m.get("ip"),
         (String) m.get("network"),
         (String) m.get("version"),

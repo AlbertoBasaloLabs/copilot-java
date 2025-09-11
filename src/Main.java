@@ -2,7 +2,7 @@
 public class Main {
   public static void main(String[] args) {
     System.out.println("Hello, World!");
-    IpApiClient.fetchIp();
+    Ip.fetchIp();
     if (args.length > 0) {
       // if args is weather
       if (args[0].equals("weather")) {

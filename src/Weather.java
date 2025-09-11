@@ -1,5 +1,5 @@
 public class Weather {
   public static void fetchWeather() {
-    System.out.println("The weather is unknown.");
+    System.out.println("The weather is unknown yet.");
   }
 }
