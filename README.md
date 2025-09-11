@@ -1,4 +1,4 @@
-# lab_vs-code-copilot_java-ask-bot
+# VSCode copilot java Ask-Bot
 Demo laboratory for VSCode Copilot course Java edition
 
 ## Dev workflow
@@ -23,4 +23,5 @@ A CLI educational tool that queries public APIs to provide basic information abo
 ---
 
 - Author: [Alberto Basalo](https://albertobasalo.dev)
-- Source: [Labs Repository](https://github.com/AlbertoBasaloLabs/vscode-copilot-java_ask-bot)
+- Academy: [Academy Organization](https://github.com/AlbertoBasaloAcademy)
+- Laboratory: [Source Repository](https://github.com/AlbertoBasaloLabs/vscode-copilot-java_ask-bot)
