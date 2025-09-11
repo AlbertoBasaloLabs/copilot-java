@@ -5,7 +5,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.net.http.HttpResponse.BodyHandler;
 
-public class Ip {
+public class IpClient {
 
   public static void fetchIp() {
     HttpClient client = HttpClient.newHttpClient();
@@ -29,7 +29,7 @@ public class Ip {
         String coordinates = "Lat " + ipApi.latitude() + ", Long " + ipApi.longitude();
         System.out.println("Coordinates: " + coordinates);
       } else {
-        System.out.println("Error HTTP " + status + ": " + body);
+        System.out.println("Error HTTP " + status);
       }
     } catch (IOException e) {
       e.printStackTrace();
