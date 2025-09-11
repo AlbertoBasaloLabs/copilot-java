@@ -11,15 +11,17 @@ cd vscode-copilot-java_ask-bot
 code .
 # Open terminal 
 # Compile Java code
-javac src/Main.java
+javac -d target src/Main.java
 # Run Java code
-java -cp src Main 
+java -cp target Main
 ```
 ## AskBot CLI
 
 A CLI educational tool that queries public APIs to provide basic information about the user's IP and associated services: location, weather, currency, time, and sun.
 
-
+```bash
+javac -d target src/Main.java && java -cp target Main
+```
 ---
 
 - Author: [Alberto Basalo](https://albertobasalo.dev)
