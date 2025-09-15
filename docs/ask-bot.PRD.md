@@ -1,7 +1,7 @@
 ---
 ID: 'DEMO_ASK-BOT'
-Curso: 'Copilot-CSharp'
-Arquetipo: 'CSharp-CLI'
+Curso: 'Copilot-Java'
+Arquetipo: 'Java-CLI'
 Autor: 'Alberto Basalo'
 ---
 # PRD — AskBot CLI

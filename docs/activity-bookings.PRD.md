@@ -1,7 +1,7 @@
 ---
 ID: 'PRACTICA_ACTIVITY-BOOKINGS'
-Curso: 'Copilot-CSharp'
-Arquetipo: 'CSharp-API'
+Curso: 'Copilot-Java'
+Arquetipo: 'Java-API'
 Autor: 'Alumnos'
 ---
 # PRD — Activity Bookings API
