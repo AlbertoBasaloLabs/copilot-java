@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class JsonParser {
@@ -35,11 +37,37 @@ public class JsonParser {
     return result;
   }
 
+  List<Object> parseArray() {
+    skipWhitespace();
+    if (!consumeIf('['))
+      throw error("Expected '[' at start of array");
+    List<Object> result = new ArrayList<>();
+    skipWhitespace();
+    if (consumeIf(']'))
+      return result; // empty array
+    while (true) {
+      skipWhitespace();
+      Object value = parseValue();
+      result.add(value);
+      skipWhitespace();
+      if (consumeIf(']'))
+        break;
+      if (!consumeIf(','))
+        throw error("Expected ',' or ']' in array");
+    }
+    return result;
+  }
+
   private Object parseValue() {
     skipWhitespace();
-    if (peek() == '"')
+    char p = peek();
+    if (p == '{')
+      return parseObject();
+    if (p == '[')
+      return parseArray();
+    if (p == '"')
       return parseString();
-    char c = peek();
+    char c = p;
     if (c == '-' || (c >= '0' && c <= '9'))
       return parseNumber();
     if (startsWith("true")) {
