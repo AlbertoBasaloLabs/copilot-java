@@ -1,7 +1,8 @@
 ## 1. specification
 
 ```txt
-Generate the complete and concise specs for the weater command based on #file:ask-bot.en.PRD.md and write it on #file:1-weather.spec.md
+Generate the complete and concise specs for the weather command based on #file:ask-bot.en.PRD.md 
+Write the spec on the file #file:1-weather.spec.md
 
 It must be composed of three main parts:
 ## 1. Problem Specification (from the user POV)
